@@ -21,7 +21,7 @@
                             echo '<li>';
                             echo '<a href="'.$value.'">Task '.$i.'</a>';
                             echo '</li>';
-                        } elseif ($info->getExtension() == '' && $value != '.' && $value != '..' && $value != 'css' && $value != 'js') {
+                        } elseif ($info->getExtension() == '' && $value != '.' && $value != '..' && $value != 'css' && $value != 'img' && $value != 'js') {
                             echo '<li>';
                             echo '<a href="'.$value.'">'.mb_strtoupper(strtr($value,['_'=>' '])).'</a>';
                             echo '</li>';
