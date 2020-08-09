@@ -1,0 +1,39 @@
+.exit a{
+  color: #746bd6;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.exit a:hover{
+  color: #222;
+}
+
+.exit a:before, .exit a:after{
+  content: '';
+  background: #e74c3c;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.exit a:before{
+  top: 0;
+  left: 0;
+}
+
+.exit a:after{
+  top: 100%;
+  right: 0;
+}
+
+.exit a:hover:before, .exit a:hover:after{
+  width: 100%;
+}
